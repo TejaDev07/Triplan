@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top:1px;
+  left: 80px;
+  width: 90%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#fcfdff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color:#fcfdff;
+  padding: 0 10px;
+  border-radius:60px;
+  border-bottom: 1px solid	#fcfdff;
+  height: 60px;
+  transition: background-color 0.4s ease;
+}
+
+.logo1 {
+  position: relative;
+  left: 80px;
+  color: rgb(249, 69, 69);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(249, 69, 69);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(239, 119, 71);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: rgb(239, 119, 71);
+}
+
+.span {
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(239, 119, 71);
+  /* Your desired color */
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+
+/* Adjust the body to account for the fixed navbar */
+
+body {
+  padding-top: 60px;
+}

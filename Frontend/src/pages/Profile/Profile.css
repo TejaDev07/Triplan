@@ -1,0 +1,94 @@
+.profile-container {
+  max-width: 1400px;
+  margin: 80px auto 0;
+  padding: 2.5rem;
+  background: #ffffff;
+  min-height: calc(100vh - 80px);
+}
+
+.bookings-details h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bookings-details h2:before {
+  content: '👤';
+  font-size: 1.8rem;
+}
+
+.bookings-details h3 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.8rem;
+  position: relative;
+}
+
+.bookings-details h3:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #F26B3A;
+}
+
+.tour-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.bookings-details p {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+  border: 1px dashed #e0e0e0;
+}
+
+.error-message {
+  background: #fff5f5;
+  color: #dc3545;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 1rem 0;
+  border: 1px solid #ffebeb;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1.5rem;
+    margin-top: 60px;
+  }
+
+  .bookings-details h2 {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .tour-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .bookings-details h3 {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+  }
+}

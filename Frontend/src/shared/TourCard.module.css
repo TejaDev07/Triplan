@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+:root {
+    --primary-color: rgb(239, 119, 71);
+    --secondary-color: rgb(239, 119, 71);
+    --heading-color: #0b2727;
+    --text-color: #6e7074;
+    --font-name: "Montserrat", sans-serif;
+    --subtitle-font-name: "Island Moments", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-name);
+    margin: 0px 2px 0px 2px;
+}
+
+
+/* Tour Card Styles */
+
+.tour_card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tour_img {
+    width: 100%;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.tour_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tour_img span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0 0;
+}
+
+.card_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.tour_location {
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tour_rating {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tour_rating i {
+    color: var(--secondary-color);
+}
+
+.tour_title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--heading-color);
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.tour_title:hover {
+    color: var(--secondary-color);
+}
+
+.card_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.card_bottom h5 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card_bottom h5 span {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.booking_btn {
+    background: var(--secondary-color);
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.booking_btn:hover {
+    background: var(--primary-color);
+}
+
+
+/* Utility Classes */
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.btn {
+    background: var(--secondary-color);
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+}

@@ -5,13 +5,13 @@ export const About = () => {
   
   const people = [
     {
-      name: 'Rohith',
+      name: 'Teja',
       role: 'CEO',
       imgSrc: 'https://example.com/rohith-photo.jpg', // Replace with actual image URL
       link: 'https://example.com/rohith-profile', // Replace with actual link URL
     },
     {
-      name: 'Vithesh',
+      name: 'Sravan',
       role: 'Creative Director',
       imgSrc: 'https://example.com/vithesh-photo.jpg', // Replace with actual image URL
       link: 'https://example.com/vithesh-profile', // Replace with actual link URL
@@ -23,13 +23,13 @@ export const About = () => {
       link: 'https://example.com/sai-kiran-profile', // Replace with actual link URL
     },
     {
-      name: 'Ram Gopal',
+      name: 'Bhubnesh',
       role: 'Photographer',
       imgSrc: 'https://example.com/ram-gopal-photo.jpg', // Replace with actual image URL
       link: 'https://example.com/ram-gopal-profile', // Replace with actual link URL
     },
     {
-      name: 'Vinay',
+      name: 'Pardhu',
       role: 'Catering Manager',
       imgSrc: 'https://example.com/vinay-photo.jpg', // Replace with actual image URL
       link: 'https://example.com/vinay-profile', // Replace with actual link URL
